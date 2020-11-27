@@ -11,6 +11,7 @@ import {
   Link
 } from "react-router-dom";
 import AddContact from './compontents/Contacts/AddContact';
+import EditContact from './compontents/Contacts/EditContact';
 
 
 function App() {
@@ -26,6 +27,9 @@ function App() {
          </Route>
          <Route path="/contacts/add">
            <AddContact/>
+         </Route>
+         <Route path="/contacts/edit/:id">
+           <EditContact/>
          </Route>
        </Switch>
      </Router>
